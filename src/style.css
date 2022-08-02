@@ -1,3 +1,21 @@
+h1{
+	text-align: center;
+}
+/* slider CSS start */
+.slider_container{
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+
+/* slider CSS end */
+
+
+
+
 #img{
 	width: 350px;
 	/* height: 350px; */

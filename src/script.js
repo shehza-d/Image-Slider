@@ -3,10 +3,15 @@ img.src = './img/img01.jpg'
 let a = 3;
 
 img.addEventListener('click', (event) => {
-	console.log(`Shehzad ${img.src}`)
-	console.log(event);
-	const Xaxis = event.clientX;
-	console.log(event.clientX);
+	// console.log(`Shehzad ${img.src}`)
+	// console.log(event);
+	// offx aur offsety1
+
+	const Xaxis = event.offsetX;
+	const imgCurrentWidth=event.target.clientWidth;
+	let clickPercentage = Math.round((Xaxis*100)/imgCurrentWidth);
+
+	console.log(clickPercentage);
 
 	a++
 	switch (a) {
@@ -38,7 +43,7 @@ img.addEventListener('click', (event) => {
 			img.src = './img/img01.jpg'
 			break;
 	}
-	console.log(a)
+	// console.log(a)
 	if (a > 8 || a < 0) a = 1
 });
 

@@ -6,17 +6,10 @@ h1{
 	display: flex;
 	justify-content: center;
 }
-
-
-
-
-
-/* slider CSS end */
-
-
-
-
 #img{
 	width: 350px;
+	box-shadow: 10px 10px 15px black;
+	/* backdrop-filter: 10px; */
 	/* height: 350px; */
 }
+/* slider CSS end */
